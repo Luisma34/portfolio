@@ -6,14 +6,14 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Si es usuario baja más de 50px, scrolled se pone a true
+      // Actualiza el estado según la posición del scroll
       setScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
 
-    // Eliminamos el listener cuando el componente desaparece, sino lo hicieramos seguiría ejecutándose.
+    // Limpieza del evento al desmontar el componente
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []); //Escribimos esto para decirle a React que lo ejecute solo una vez
+  }, []); // Solo se ejecuta al montar el componente
 
   return <nav>Navbar</nav>;
 }
