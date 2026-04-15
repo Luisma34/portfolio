@@ -1,7 +1,3 @@
-{
-  /* Es el módulo donde define la navegación de tu aplicación.
-Es decir, es el archivo que decide: qué componente se renderiza según la URL.*/
-}
 // Importamos el sistema de routing de React Router.
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Importamos los componentes de las páginas que queremos mostrar.
