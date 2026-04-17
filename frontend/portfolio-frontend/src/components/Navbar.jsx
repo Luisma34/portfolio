@@ -103,7 +103,7 @@ function Navbar() {
 
       {/* Menú móvil: aparece solo cuando el estado está en true */}
       <div
-        className={`absolute top-full left-0 flex w-full flex-col items-center gap-6 bg-neutral-950 px-6 py-8 text-white shadow-lg md:hidden transition-all duration-500 ${menuOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-3 pointer-events-none"}  ease-in-out }`}
+        className={`absolute top-full left-0 flex w-full flex-col items-center gap-6 bg-neutral-950 px-6 py-8 text-white shadow-lg md:hidden transition-all duration-500 ${menuOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-3 pointer-events-none"} ease-in-out`}
       >
         {/* pointer-events-none → cuando está cerrado e invisible,
              desactiva los clics para no bloquear lo que hay debajo */}
@@ -117,9 +117,8 @@ function Navbar() {
             <span
               className="text-base tracking-wide transition-all duration-500"
               style={{
-                // STAGGER: cada link espera un poco más que el anterior.
-                // index 0 → 0ms, index 1 → 60ms, index 2 → 120ms, index 3 → 180ms
-                // Al cerrar siempre 0ms para que desaparezcan todos a la vez.
+                // STAGGER: este primer link entra sin delay (0ms).
+                // Los siguientes entran con 60/120/180ms para efecto escalonado.
                 transitionDelay: menuOpen ? "0ms" : "0ms",
                 opacity: menuOpen ? 1 : 0,
                 transform: menuOpen ? "translateY(0)" : "translateY(10px)",
