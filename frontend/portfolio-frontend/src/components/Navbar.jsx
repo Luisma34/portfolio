@@ -21,7 +21,7 @@ function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 z-50 flex w-full justify-between px-6 py-4 transition-all duration-300 ${
-        scrolled ? "bg-neutral-950 shadow-lg" : "bg-transparent"
+        scrolled ? "bg-neutral-950 shadow-lg" : "bg-neutral-950/85 backdrop-blur-md"
       }`}
     >
       {/* Logo del navbar */}
