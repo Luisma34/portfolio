@@ -1,6 +1,6 @@
 
 function Hero() {
-  
+    
   return (
     <section id="home" className="pt-32 flex flex-col items-center justify-center">
       <h3>!Hola!, Soy Luis Manuel</h3>
