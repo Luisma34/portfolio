@@ -29,7 +29,7 @@ function Navbar() {
         </a>
       </div>
     </nav>
-  );
+  );por
 }
 
 export default Navbar;
