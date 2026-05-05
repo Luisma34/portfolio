@@ -16,7 +16,7 @@ function Navbar() {
     // Fragmento de React: permite devolver dos elementos al mismo nivel sin añadir un div extra al DOM
     <>
       {/* Nav fijo en la parte superior, ocupa todo el ancho, con desenfoque de fondo */}
-      <nav className="flex justify-between fixed top-0 left-0 z-50 w-full px-6 py-4 tracking-wide backdrop-blur-md">
+      <nav className="flex justify-between fixed top-0 left-0 z-50 w-full px-6 py-4 tracking-wide backdrop-blur-md ">
         {/* Nombre completo a la izquierda con tipografía Playfair Display */}
         <div>
           <a
@@ -30,9 +30,15 @@ function Navbar() {
 
         {/* Links de navegación — ocultos en móvil, visibles en pantallas medianas o más grandes */}
         <div className="hidden md:flex gap-5 ">
-          <a href="#about">Sobre mí</a>
-          <a href="#projects">Proyectos</a>
-          <a href="#contact">Contacto</a>
+          <a href="#about" className="hover:underline hover:text-red-500">
+            Sobre mí
+          </a>
+          <a href="#projects" className="hover:underline hover:text-red-500">
+            Proyectos
+          </a>
+          <a href="#contact" className="hover:underline hover:text-red-500">
+            Contacto
+          </a>
         </div>
 
         {/* Botón hamburguesa — visible solo en móvil (md:hidden lo oculta en desktop) */}
@@ -48,7 +54,7 @@ function Navbar() {
       </nav>
 
       {/* ============================================================
-          TODO: MEJORAR MENÚ HAMBURGUESA
+          TODO: MEJORAR MENÚ HAMBURGUESA y LINKS
           - Definir paleta de colores de la web primero
           - Aplicar color de fondo coherente con la paleta (quitar border-blue-300)
           - Mejorar animación de entrada/salida (añadir scale)
