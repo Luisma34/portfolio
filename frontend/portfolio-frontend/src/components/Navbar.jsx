@@ -1,14 +1,12 @@
 // useState para estados locales, useEffect reservado para detectar el scroll más adelante
-import { useEffect, useState } from "react";
+import { useState } from "react";
 // HiMenu → icono hamburguesa | HiX → icono de cierre (X)
 import { HiX, HiMenu } from "react-icons/hi";
 // motion → elemento animable | AnimatePresence → ejecuta la animación "exit" antes de borrar del DOM
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence} from "framer-motion";
+
 
 function Navbar() {
-  // Guardará true cuando el usuario haga scroll — pendiente de usar para cambiar el estilo de la nav
-  const [scrolled, setScrolled] = useState(false);
-
   // Controla si el menú hamburguesa está abierto (true) o cerrado (false)
   const [burguer, menuBurguer] = useState(false);
 
