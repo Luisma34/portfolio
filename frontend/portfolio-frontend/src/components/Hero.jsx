@@ -14,7 +14,7 @@ function Hero() {
         <div className="relative">
           <img
             className="mx-auto h-fit w-1/2 md:h-4/5 md:w-3/4 pt-1 md:pt-32"
-            src="src\assets\photo-profile.png"
+            src="src\assets\photo-studio-gemini.png"
             alt="Foto de perfil"
           />
         </div>

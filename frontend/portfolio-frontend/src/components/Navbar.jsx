@@ -2,7 +2,9 @@
 import { useState } from "react";
 // HiMenu → icono hamburguesa | HiX → icono de cierre (X)
 import { HiX, HiMenu } from "react-icons/hi";
-// motion → elemento animable | AnimatePresence → ejecuta la animación "exit" antes de borrar del DOM
+// motion → elemento animable | AnimatePresence → ejecuta la animación "exit" antes de borrar del DOM.
+// La siguiente línea es para decirle a ESLint que ignore el fallo de motion, el código funciona perfectamente.
+// eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence} from "framer-motion";
 
 
