@@ -8,11 +8,14 @@ const iconsVariant = {
   hover: { y: [-50, 0], opacity: [0, 1] },
 };
 
+// MEJORA EN PANTALLAS GRANDES
+
 function Hero() {
   return (
     // h-screen para que ocupe toda la pantalla
     // flex-col + justify-center para centrar el contenido verticalmente
     // pt-72 en movil para que la imagen no quede debajo del navbar (provisional)
+    // Estandar de tamaño de pantalla para toda la web (COPIAR)
     <section className="pt-72 md:pt-32 flex flex-col justify-center items-center h-screen max-w-6xl mx-auto">
       {/* flex-col en movil (imagen arriba, texto abajo) y flex-row en desktop (lado a lado) */}
       <div className="flex flex-col md:flex-row px-6 md:px-15 gap-5 items-center text-black-700">
@@ -48,7 +51,10 @@ function Hero() {
             <motion.a
               href="https://www.linkedin.com/in/luis-manuel-cord%C3%B3n-%C3%A1lvarez-357620356/"
               target="_blank"
+              // noopener: Evita que la nueva página tome el control de esta ventana (evita ataques de Phising mediante 'window.opener')
+              // noreferrer: Oculta la información de procedencia (IP/URL de mi portfolio) por privacidad y seguridad.
               rel="noopener noreferrer"
+              // Enseñamos los diferentes estados del componente
               variants={{
                 normal: { backgroundColor: "rgb(44,44,44)" },
                 hover: { backgroundColor: "#0072b1" },
