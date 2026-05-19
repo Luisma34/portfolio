@@ -21,7 +21,7 @@ function Navbar() {
         style={{ fontFamily: '"Playfair Display", serif' }}
       >
         {/* Contenedor centrado — DEBE estar dentro del nav porque fixed ignora a los padres externos */}
-        <div className="max-w-6xl mx-auto w-full px-6 flex justify-between items-center">
+        <div className="md:max-w-6xl xl:max-w-full xl:mx-8 mx-auto w-full xl:px-18 md:px-6 flex justify-between items-center">
           {/* Nombre / logo — enlace ancla a la sección home */}
           <div>
             <a href="#home" className="text-[#000000]">
