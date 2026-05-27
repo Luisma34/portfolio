@@ -52,18 +52,19 @@ function TechStack() {
     },
   ];
 
-  const technologiesDoble = [...technologies, ...technologies];
-
   return (
     <>
-      <div className="py-52">
+      <div className="py-20 md:py-52">
         <Layout>
-          <h1 className="pb-5 ">Stack</h1>
-          <div className="carousel rounded-box w-full gap-5 flex items-center justify-center">
-            {technologiesDoble.map((tech, index) => (
+          <h1 className="text-2xl md:text-4xl font-serif py-3 md:py-5 pb-5 md:pb-15">
+            Tech Stack
+          </h1>
+
+          <div className="w-3/4 md:w-full gap-5 md:gap-10 grid grid-cols-2 md:grid-cols-4 place-items-center">
+            {technologies.map((tech) => (
               // Entramos en el array buscando el indice de cada elemento para no duplicar nada.
               // Hemos creado cada imagen de manera que simplificamos código.
-              <div key={index} className="carousel-item">
+              <div key={tech.name} className="w-2/4">
                 <img
                   src={tech.src}
                   alt={tech.name}
@@ -71,7 +72,6 @@ function TechStack() {
                 />
               </div>
             ))}
-            ;
           </div>
         </Layout>
       </div>

@@ -17,15 +17,15 @@ function Navbar() {
     <>
       {/* Nav fija en la parte superior con desenfoque de fondo */}
       <nav
-        className="fixed top-0 left-0 right-0 z-50 w-full py-4 tracking-wide backdrop-blur-md"
+        className="fixed top-0 left-0 right-0 z-50 md:w-full py-4 tracking-wide backdrop-blur-md"
         style={{ fontFamily: '"Playfair Display", serif' }}
       >
         {/* Contenedor centrado — DEBE estar dentro del nav porque fixed ignora a los padres externos */}
-        <div className="md:max-w-6xl xl:max-w-full xl:mx-8 mx-auto w-full xl:px-18 md:px-6 flex justify-between items-center">
+        <div className="w-full md:max-w-6xl xl:max-w-full xl:mx-8 mx-auto xl:px-20 flex justify-between items-center">
           {/* Nombre / logo — enlace ancla a la sección home */}
           <div>
             <a href="#home" className="text-[#000000]">
-              Luis Manuel Cordón Álvarez
+              Luis M. Cordón
             </a>
           </div>
 

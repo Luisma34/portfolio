@@ -14,7 +14,7 @@ const iconsVariant = {
 function Hero() {
   return (
     <Layout>
-      <section className="flex flex-col pt-18 md:pt-32">
+      <section className="flex flex-col pt-18 md:pt-32" id="home">
         {/* flex-col en movil (imagen arriba, texto abajo) y flex-row en desktop (lado a lado) */}
         <div className="flex flex-col md:flex-row px-2 md:px-15 gap-5 items-center text-black-700">
           {/* Foto de perfil */}
@@ -116,7 +116,7 @@ function Hero() {
           </div>
         </div>
         {/* Texto debajo de la foto y el texto */}
-        <div className="rounded-sm border border-black bg-black px-2 py-2 font-mono text-xs text-white mt-8 mx-2 md:mt-15 w-full self-center">
+        <div className="rounded-sm border border-black bg-black px-2 py-2 font-mono text-xs text-white mt-8 mx-2 md:mt-15 w-3/4 md:w-full self-center">
           <p className="flex items-center justify-center tracking-wider">
             <span>
               <span className="flex items-center justify-center tracking-wider p-0.5">
