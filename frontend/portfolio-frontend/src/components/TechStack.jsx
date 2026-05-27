@@ -1,4 +1,6 @@
 import Layout from "./Layout";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
 
 function TechStack() {
   const technologies = [
@@ -61,16 +63,23 @@ function TechStack() {
           </h1>
 
           <div className="w-3/4 md:w-full gap-5 md:gap-10 grid grid-cols-2 md:grid-cols-4 place-items-center">
-            {technologies.map((tech) => (
+            {technologies.map((tech, index) => (
               // Entramos en el array buscando el indice de cada elemento para no duplicar nada.
               // Hemos creado cada imagen de manera que simplificamos código.
-              <div key={tech.name} className="w-2/4">
+              <motion.div
+                key={tech.name}
+                className="w-2/4"
+                initial={{ translateY: 50, opacity: -1, rotateX: -150 }}
+                whileInView={{ translateY: 0, opacity: 2, rotateX: 1 }}
+                transition={{ delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
                 <img
                   src={tech.src}
                   alt={tech.name}
                   className="w-25 object-contain"
                 />
-              </div>
+              </motion.div>
             ))}
           </div>
         </Layout>
