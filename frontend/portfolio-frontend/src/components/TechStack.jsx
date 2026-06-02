@@ -58,9 +58,9 @@ function TechStack() {
     <>
       <div className="py-20 md:py-52">
         <Layout>
-          <h1 className="text-2xl md:text-4xl font-serif py-3 md:py-5 pb-5 md:pb-15">
+          <h2 className="text-2xl md:text-4xl font-serif py-3 md:py-5 pb-5 md:pb-15">
             Tech Stack
-          </h1>
+          </h2>
 
           <div className="w-3/4 md:w-full gap-5 md:gap-10 grid grid-cols-2 md:grid-cols-4 place-items-center">
             {technologies.map((tech, index) => (
@@ -69,9 +69,9 @@ function TechStack() {
               <motion.div
                 key={tech.name}
                 className="w-2/4"
-                initial={{ translateY: 50, opacity: -1, rotateX: -150 }}
-                whileInView={{ translateY: 0, opacity: 2, rotateX: 1 }}
-                transition={{ delay: index * 0.1 }}
+                initial={{ translateY: 50, opacity: 0 }}
+                whileInView={{ translateY: 0, opacity: 1 }}
+                transition={{ delay: index * 0.1 }} 
                 viewport={{ once: true }}
               >
                 <img

@@ -5,12 +5,15 @@ import { HiX, HiMenu } from "react-icons/hi";
 // motion → elemento animable | AnimatePresence → ejecuta la animación "exit" antes de borrar del DOM.
 // La siguiente línea es para decirle a ESLint que ignore el fallo de motion, el código funciona perfectamente.
 // eslint-disable-next-line no-unused-vars
-import { motion, AnimatePresence} from "framer-motion";
-
+import { motion, AnimatePresence } from "framer-motion";
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
   // Controla si el menú hamburguesa está abierto (true) o cerrado (false)
   const [burguer, menuBurguer] = useState(false);
+
+  // Controla que cuando estemos en otra URL se redirija a donde nosotros deseemos.
+  const location = useLocation();
 
   return (
     // Fragmento: devuelve dos elementos al mismo nivel sin añadir un div extra al DOM
@@ -24,9 +27,15 @@ function Navbar() {
         <div className="w-full  md:max-w-6xl xl:max-w-full xl:mx-8 mx-auto sm:px-15 xl:px-20 flex justify-between items-center">
           {/* Nombre / logo — enlace ancla a la sección home */}
           <div>
-            <a href="#home" className="text-[#000000]">
-              Luis M. Cordón
-            </a>
+            {location.pathname === "/" ? (
+              <a href="#home" className="text-[#000000]">
+                Luis M. Cordón
+              </a>
+            ) : (
+              <Link to="/" className="text-[#000000]">
+                Luis M. Cordón
+              </Link>
+            )}
           </div>
 
           {/* Links de navegación — hidden en móvil, visible desde md en adelante */}
@@ -34,9 +43,11 @@ function Navbar() {
             <a href="#about" className="hover:underline hover:text-red-500">
               Sobre mí
             </a>
-            <a href="#projects" className="hover:underline hover:text-red-500">
+
+            <Link to="/projects" className="hover:underline hover:text-red-500">
               Proyectos
-            </a>
+            </Link>
+
             <a href="#contact" className="hover:underline hover:text-red-500">
               Contacto
             </a>
