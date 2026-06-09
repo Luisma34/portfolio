@@ -71,7 +71,7 @@ function TechStack() {
                 className="w-2/4"
                 initial={{ translateY: 50, opacity: 0 }}
                 whileInView={{ translateY: 0, opacity: 1 }}
-                transition={{ delay: index * 0.1 }} 
+                transition={{ delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
                 <img
@@ -83,6 +83,7 @@ function TechStack() {
             ))}
           </div>
         </Layout>
+        <div className="border-b w-full h-full py-7"></div>
       </div>
     </>
   );
