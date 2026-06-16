@@ -9,7 +9,7 @@ function Home() {
 
       <TechStack />
 
-      <Projects />
+      <Projects className={"pt-15 md:pt-7"} namePage={"Proyectos"} />
     </>
   );
 }

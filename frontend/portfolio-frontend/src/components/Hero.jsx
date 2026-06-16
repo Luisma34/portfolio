@@ -116,22 +116,17 @@ function Hero() {
           </div>
         </div>
         {/* Texto debajo de la foto y el texto */}
-        <div className="rounded-sm border border-black bg-black px-2 py-2 font-mono text-xs text-white mt-8 mx-2 md:mt-15 w-3/4 md:w-full self-center">
-          <p className="flex items-center justify-center tracking-wider">
-            <span>
-              <span className="flex items-center justify-center tracking-wider p-0.5">
-                ¿Buscando un portfolio?
-              </span>
-              El código de esta web es de open source.{" "}
-              <a
-                className="underline text-red-500"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/Luisma34/portfolio"
-              >
-                Ver en GitHub
-              </a>
-            </span>
+        <div className="rounded-sm border border-black bg-black px-4 py-3 font-mono text-xs text-white mt-8 md:mt-15 w-full self-center">
+          <p className="text-center tracking-wider leading-relaxed">
+            ¿Buscando un portfolio? El código de esta web es open source.{" "}
+            <a
+              className="underline text-red-500"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/Luisma34/portfolio"
+            >
+              Ver en GitHub
+            </a>
           </p>
         </div>
       </section>

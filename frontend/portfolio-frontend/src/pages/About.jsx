@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import { useEffect } from "react";
 
-function Contact() {
+function About() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -12,20 +12,14 @@ function Contact() {
         <div className="border-b w-9/12 md:w-full"></div>
         <div className="pt-2 md:pt-5 pb-2 md:pb-5 w-full">
           <p className="text-red-500 leading-relaxed md:text-xl font-sans text-center">
-            Contacto
+            Sobre mí
           </p>
           <h1 className="text-2xl md:text-4xl text-center leading-relaxed font-sans">
             Próximamente.
           </h1>
           <p className="md:pt-2 text-center max-w-2xl mx-auto text-gray-500">
-            Estoy preparando un formulario de contacto. Mientras tanto, puedes
-            escribirme directamente a{" "}
-            <a
-              href="mailto:luisma.cordon@gmail.com"
-              className="underline text-red-500 hover:opacity-70 transition-opacity"
-            >
-              luisma.cordon@gmail.com
-            </a>
+            Aquí encontrarás mi historia, experiencia y lo que me mueve como
+            desarrollador. Vuelve pronto.
           </p>
         </div>
         <div className="border-b w-9/12 md:w-full"></div>
@@ -34,4 +28,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default About;

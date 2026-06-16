@@ -3,9 +3,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Importamos los componentes de las páginas que queremos mostrar.
 import Home from "../pages/Home"; // Página principal("/")
 import Contact from "../pages/Contact"; // Página de contacto ("/contacto")
-import Projects from "../components/Projects";
 import Navbar from "../components/Navbar";
 import ProjectsPage from "../pages/ProjectsPage";
+import Privacy from "../pages/Privacy";
+import About from "../pages/About";
+import Footer from "../components/Footer";
 
 function AppRouter() {
   // Este componente se encarga de controlar la navegación de la App
@@ -16,7 +18,6 @@ function AppRouter() {
       {/* Navbar aqui al usar useLocation
       Puesto encima de Routes para que aparezca en todas las páginas. */}
       <Navbar />
-
       {/*Contenedor de todas las rutas disponibles*/}
       <Routes>
         {/* 
@@ -31,15 +32,17 @@ function AppRouter() {
         */}
         <Route path="/contact" element={<Contact />} />
 
-        {/* 
-          Ruta de projects:
-          Si la URL es "/projects" → se renderiza el componente Projects
-        */}
-        <Route path="/projects" element={<Projects />} />
-
         {/* Ruta para la página independiente de proyectos */}
         <Route path="/projectsPage" element={<ProjectsPage />} />
+
+        {/* Política de privacidad */}
+        <Route path="/privacy" element={<Privacy />} />
+
+        {/* Sobre mí */}
+        <Route path="/about" element={<About />} />
       </Routes>
+      {/* Footer aparece en todas las páginas */}
+      <Footer />
     </BrowserRouter>
   );
 }

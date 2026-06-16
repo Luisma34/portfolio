@@ -18,7 +18,7 @@ function TechStack() {
     },
     {
       name: "TailwindCSS",
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg",
     },
     {
       name: "Spring",
@@ -56,7 +56,7 @@ function TechStack() {
 
   return (
     <>
-      <div className="py-20 md:py-52">
+      <div className="py-10 md:py-20">
         <Layout>
           <h2 className="text-2xl md:text-4xl font-serif py-3 md:py-5 pb-5 md:pb-15">
             Tech Stack
@@ -68,7 +68,7 @@ function TechStack() {
               // Hemos creado cada imagen de manera que simplificamos código.
               <motion.div
                 key={tech.name}
-                className="w-2/4"
+                className="w-full flex justify-center"
                 initial={{ translateY: 50, opacity: 0 }}
                 whileInView={{ translateY: 0, opacity: 1 }}
                 transition={{ delay: index * 0.1 }}
