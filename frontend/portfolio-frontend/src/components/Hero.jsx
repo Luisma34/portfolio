@@ -3,6 +3,7 @@ import { SiGmail } from "react-icons/si";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import Layout from "./Layout";
+import profilePhoto from "../assets/photo-studio.png";
 
 const iconsVariant = {
   normal: { y: 0, opacity: 1 },
@@ -22,7 +23,7 @@ function Hero() {
           <div className="relative">
             <img
               className="mx-auto h-fit w-1/2 md:h-4/5 md:w-3/4 pt-1"
-              src="src/assets/photo-studio.png"
+              src={profilePhoto}
               alt="Foto de perfil"
             />
           </div>

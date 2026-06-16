@@ -1,5 +1,9 @@
 import ProjectsCard from "./ProjectsCard";
 import Layout from "./Layout";
+import inplayImg from "../assets/InplayEvents/foto-31.jpg";
+import dorImg from "../assets/football-shop.png";
+import libraryImg from "../assets/library-manager.png";
+import ticTacToeImg from "../assets/tic-tac-toe.png";
 
 function Projects({ className, namePage, headingClass = "text-2xl md:text-4xl font-serif py-3 md:py-5 pb-5 md:pb-15" }) {
   return (
@@ -19,7 +23,7 @@ function Projects({ className, namePage, headingClass = "text-2xl md:text-4xl fo
               rel="noopener noreferrer"
             >
               <ProjectsCard
-                image={"src/assets/InplayEvents/foto-31.jpg"}
+                image={inplayImg}
                 project={"Inplay Events"}
                 description={"Gestión de club de padel."}
                 stack={"React, Bootstrap,Spring Boot."}
@@ -29,12 +33,12 @@ function Projects({ className, namePage, headingClass = "text-2xl md:text-4xl fo
 
             {/* Proyecto DOR */}
             <a
-              href=" https://github.com/Luisma34/Proyecto_final_DOR"
+              href="https://github.com/Luisma34/Proyecto_final_DOR"
               target="_blank"
               rel="noopener noreferrer"
             >
               <ProjectsCard
-                image={"src/assets/football-shop.png"}
+                image={dorImg}
                 project={"Proyecto DOR 2024"}
                 description={"Proyecto para diseño de interfaces web."}
                 stack={"HTML, CSS, Bootstrap, Figma."}
@@ -48,11 +52,9 @@ function Projects({ className, namePage, headingClass = "text-2xl md:text-4xl fo
               rel="noopener noreferrer"
             >
               <ProjectsCard
-                image={"src/assets/library-manager.png"}
+                image={libraryImg}
                 project={"Library manager"}
-                description={
-                  "Libreria para administrar tu biblioteca personal."
-                }
+                description={"Libreria para administrar tu biblioteca personal."}
                 stack={"HTML, CSS, JavaScript Vanilla."}
               ></ProjectsCard>
             </a>
@@ -64,7 +66,7 @@ function Projects({ className, namePage, headingClass = "text-2xl md:text-4xl fo
               rel="noopener noreferrer"
             >
               <ProjectsCard
-                image={"src/assets/tic-tac-toe.png"}
+                image={ticTacToeImg}
                 project={"Tic tac toe"}
                 description={"Tres en raya para web Odin."}
                 stack={"HTML, CSS, JavaScript Vanilla."}
