@@ -44,7 +44,10 @@ function Navbar() {
               Sobre mí
             </a>
 
-            <Link to="/projects" className="hover:underline hover:text-red-500">
+            <Link
+              to="/projectsPage"
+              className="hover:underline hover:text-red-500"
+            >
               Proyectos
             </Link>
 
@@ -98,12 +101,12 @@ function Navbar() {
             >
               Sobre mí
             </a>
-            <a
-              href="#projects"
+            <Link
+              to="/projectsPage"
               className="transition duration-300 hover:-translate-y-1"
             >
               Proyectos
-            </a>
+            </Link>
             <a
               href="#contact"
               className="transition duration-300 hover:-translate-y-1"

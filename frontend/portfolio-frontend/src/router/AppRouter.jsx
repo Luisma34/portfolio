@@ -5,6 +5,7 @@ import Home from "../pages/Home"; // Página principal("/")
 import Contact from "../pages/Contact"; // Página de contacto ("/contacto")
 import Projects from "../components/Projects";
 import Navbar from "../components/Navbar";
+import ProjectsPage from "../pages/ProjectsPage";
 
 function AppRouter() {
   // Este componente se encarga de controlar la navegación de la App
@@ -35,6 +36,9 @@ function AppRouter() {
           Si la URL es "/projects" → se renderiza el componente Projects
         */}
         <Route path="/projects" element={<Projects />} />
+
+        {/* Ruta para la página independiente de proyectos */}
+        <Route path="/projectsPage" element={<ProjectsPage />} />
       </Routes>
     </BrowserRouter>
   );

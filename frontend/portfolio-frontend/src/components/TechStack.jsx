@@ -82,8 +82,8 @@ function TechStack() {
               </motion.div>
             ))}
           </div>
+          <div className="border-b w-3/4 md:w-full h-full py-7"></div>
         </Layout>
-        <div className="border-b w-full h-full py-7"></div>
       </div>
     </>
   );

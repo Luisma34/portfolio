@@ -28,7 +28,7 @@ function Hero() {
           </div>
 
           {/* Bloque de texto */}
-          <div className="flex flex-col w-3/4 md:w-4xl gap-4 md:p-4 items-center md:items-end justify-center md:justify-end md:self-end">
+          <div className="flex flex-col w-3/4 md:w-4xl gap-4 md:p-4 items-center md:items-end xl:items-start justify-center md:justify-end md:self-end">
             {/* Solo hay un h1 por pagina, importante para el SEO */}
             <h1 className="text-2xl md:text-4xl font-serif">
               Soy Luis Manuel, Full Stack developer (Junior).
