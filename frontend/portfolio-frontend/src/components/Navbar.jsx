@@ -8,7 +8,6 @@ function Navbar() {
   const [burguer, menuBurguer] = useState(false);
   const location = useLocation();
 
-  // Clases activas/inactivas para los links del desktop
   const linkClass = (path) =>
     location.pathname === path
       ? "underline text-red-500"
@@ -16,7 +15,6 @@ function Navbar() {
 
   return (
     <>
-      {/* Navbar fija */}
       <nav
         className="fixed top-0 left-0 right-0 z-50 py-4 tracking-wide backdrop-blur-md border-b border-black/5"
         style={{ fontFamily: '"Playfair Display", serif' }}

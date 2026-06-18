@@ -10,16 +10,12 @@ const iconsVariant = {
   hover: { y: [-50, 0], opacity: [0, 1] },
 };
 
-// MEJORA EN PANTALLAS GRANDES
-
 function Hero() {
   return (
     <Layout>
       <section className="flex flex-col pt-18 md:pt-32" id="home">
-        {/* flex-col en movil (imagen arriba, texto abajo) y flex-row en desktop (lado a lado) */}
         <div className="flex flex-col md:flex-row px-2 md:px-15 gap-5 items-center text-black-700">
-          {/* Foto de perfil */}
-          {/* relative por si quiero añadir algo encima de la foto en el futuro */}
+          {/* relative: reservado para elementos futuros sobre la foto */}
           <div className="relative">
             <img
               className="mx-auto h-fit w-1/2 md:h-4/5 md:w-3/4 pt-1"
@@ -28,14 +24,12 @@ function Hero() {
             />
           </div>
 
-          {/* Bloque de texto */}
           <div className="flex flex-col w-3/4 md:w-4xl gap-4 md:p-4 items-center md:items-end xl:items-start justify-center md:justify-end md:self-end">
-            {/* Solo hay un h1 por pagina, importante para el SEO */}
+            {/* Un solo h1 por página — SEO */}
             <h1 className="text-2xl md:text-4xl font-serif">
               Soy Luis Manuel, Full Stack developer (Junior).
             </h1>
 
-            {/* leading-relaxed para que el texto no quede tan apretado */}
             <p className="text-base md:mt-3 md:leading-relaxed font-sans">
               Programador web titulado en DAW. Te invito a explorar mi portfolio
               para conocerme un poco más. Si buscas a alguien con compromiso y
@@ -50,10 +44,7 @@ function Hero() {
               <motion.a
                 href="https://www.linkedin.com/in/luis-manuel-cord%C3%B3n-%C3%A1lvarez-357620356/"
                 target="_blank"
-                // noopener: Evita que la nueva página tome el control de esta ventana (evita ataques de Phising mediante 'window.opener')
-                // noreferrer: Oculta la información de procedencia (IP/URL de mi portfolio) por privacidad y seguridad.
                 rel="noopener noreferrer"
-                // Enseñamos los diferentes estados del componente
                 variants={{
                   normal: { backgroundColor: "rgb(44,44,44)" },
                   hover: { backgroundColor: "#0072b1" },
@@ -75,7 +66,6 @@ function Hero() {
               <motion.a
                 href="https://wa.me/34623025851?text=Hola, he visto tu portfolio y me gustaría contactar contigo para una entrevista."
                 target="_blank"
-                // Prevención contra ataques malisiosos.
                 rel="noopener noreferrer"
                 variants={{
                   normal: { backgroundColor: "rgb(44,44,44)" },
@@ -116,7 +106,6 @@ function Hero() {
             </div>
           </div>
         </div>
-        {/* Texto debajo de la foto y el texto */}
         <div className="rounded-sm border border-black bg-black px-4 py-3 font-mono text-xs text-white mt-8 md:mt-15 w-full self-center">
           <p className="text-center tracking-wider leading-relaxed">
             ¿Buscando un portfolio? El código de esta web es open source.{" "}

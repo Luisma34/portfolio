@@ -64,8 +64,6 @@ function TechStack() {
 
           <div className="w-3/4 md:w-full gap-5 md:gap-10 grid grid-cols-2 md:grid-cols-4 place-items-center">
             {technologies.map((tech, index) => (
-              // Entramos en el array buscando el indice de cada elemento para no duplicar nada.
-              // Hemos creado cada imagen de manera que simplificamos código.
               <motion.div
                 key={tech.name}
                 className="w-full flex justify-center"

@@ -16,21 +16,24 @@ const ProjectsCard = ({ project, description, stack, image, className }) => {
         className={`w-full h-full object-cover ${className}`}
       />
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-2 md:p-6">
+      {/* Gradiente móvil — nombre siempre visible */}
+      <div className="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-black/80 to-transparent md:hidden flex items-end p-2">
+        <h3 className="text-white text-xs font-semibold">{project}</h3>
+      </div>
+
+      {/* Overlay desktop — hover */}
+      <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden md:flex flex-col justify-between p-6">
         <motion.div
           className="self-end"
           whileHover={{ x: 4 }}
           transition={{ duration: 0.3 }}
         >
-          <FiArrowRight className="self-end text-white text-xs md:text-xl" />
+          <FiArrowRight className="text-white text-xl" />
         </motion.div>
-        <div className="justify-end">
-          <h3 className="text-white text-xs md:text-xl font-semibold mb-1">
-            {project}
-          </h3>
-          <p className="text-white/80 text-xs md:text-sm mb-2">{description}</p>
-          <span className="text-white/50 text-xs hidden md:block">{stack}</span>
+        <div>
+          <h3 className="text-white text-xl font-semibold mb-1">{project}</h3>
+          <p className="text-white/80 text-sm mb-2">{description}</p>
+          <span className="text-white/50 text-xs">{stack}</span>
         </div>
       </div>
     </motion.div>
