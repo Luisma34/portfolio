@@ -76,7 +76,16 @@ function Privacy() {
                 garantizar el funcionamiento y la seguridad del servicio. Los
                 datos pueden tratarse fuera del EEE, amparados por Cláusulas
                 Contractuales Tipo conforme al RGPD. Más información en la
-                política de privacidad de Vercel.
+                política de{" "}
+                <a
+                  href="https://vercel.com/legal/privacy-notice"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline text-red-500"
+                >
+                  {" "}
+                  privacidad de Vercel.
+                </a>
               </p>
             </section>
 
