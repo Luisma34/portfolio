@@ -20,12 +20,15 @@ function Navbar() {
         style={{ fontFamily: '"Playfair Display", serif' }}
       >
         <div className="w-full md:max-w-6xl xl:max-w-full xl:px-15 mx-auto px-8 flex justify-between items-center">
-
           {/* Logo */}
           {location.pathname === "/" ? (
-            <a href="#home" className="text-black">Luis M. Cordón</a>
+            <a href="#home" className="text-black">
+              Luis M. Cordón
+            </a>
           ) : (
-            <Link to="/" className="text-black">Luis M. Cordón</Link>
+            <Link to="/" className="text-black">
+              Luis M. Cordón
+            </Link>
           )}
 
           {/* Links desktop */}
@@ -65,10 +68,10 @@ function Navbar() {
       <AnimatePresence>
         {burguer && (
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3 }}
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "100%" }}
+            transition={{ duration: 0.7 }}
             className="md:hidden flex flex-col right-2 items-start gap-5 fixed top-4 w-fit px-6 py-4 backdrop-blur-md rounded-2xl z-50 shadow-xl bg-white border border-gray-200"
           >
             <button
@@ -77,13 +80,22 @@ function Navbar() {
             >
               <HiX />
             </button>
-            <Link to="/about" className="transition duration-300 hover:-translate-y-1">
+            <Link
+              to="/about"
+              className="transition duration-300 hover:-translate-y-1"
+            >
               Sobre mí
             </Link>
-            <Link to="/projectsPage" className="transition duration-300 hover:-translate-y-1">
+            <Link
+              to="/projectsPage"
+              className="transition duration-300 hover:-translate-y-1"
+            >
               Proyectos
             </Link>
-            <Link to="/contact" className="transition duration-300 hover:-translate-y-1">
+            <Link
+              to="/contact"
+              className="transition duration-300 hover:-translate-y-1"
+            >
               Contacto
             </Link>
           </motion.div>

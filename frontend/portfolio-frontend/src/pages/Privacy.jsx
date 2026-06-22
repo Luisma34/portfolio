@@ -11,7 +11,6 @@ function Privacy() {
     <div className="pt-36 pb-20">
       <Layout>
         <div className="w-full max-w-2xl">
-
           {/* Cabecera */}
           <div className="border-b border-black w-full mb-10"></div>
           <p className="text-xs uppercase tracking-widest text-red-500 mb-4">
@@ -30,7 +29,6 @@ function Privacy() {
 
           {/* Contenido */}
           <div className="flex flex-col gap-8 text-sm leading-relaxed text-gray-700">
-
             <section>
               <h2 className="font-semibold text-black mb-2">
                 ¿Qué datos se recopilan?
@@ -63,17 +61,22 @@ function Privacy() {
               <h2 className="font-semibold text-black mb-2">Analytics</h2>
               <p>
                 En el futuro está previsto añadir un sistema de analítica
-                anónima para conocer el número de visitas que recibe la web.
-                Se utilizará una herramienta que no recopile datos personales
-                ni haga seguimiento individual de los usuarios. Esta política
-                se actualizará en ese momento.
+                anónima para conocer el número de visitas que recibe la web. Se
+                utilizará una herramienta que no recopile datos personales ni
+                haga seguimiento individual de los usuarios. Esta política se
+                actualizará en ese momento.
               </p>
             </section>
 
             <section>
               <h2 className="font-semibold text-black mb-2">Alojamiento</h2>
               <p className="text-gray-400 italic">
-                Pendiente — se actualizará cuando la web esté desplegada en producción.
+                Este sitio está alojado en Vercel Inc. (EE. UU.), que puede
+                procesar automáticamente la IP y los registros de acceso para
+                garantizar el funcionamiento y la seguridad del servicio. Los
+                datos pueden tratarse fuera del EEE, amparados por Cláusulas
+                Contractuales Tipo conforme al RGPD. Más información en la
+                política de privacidad de Vercel.
               </p>
             </section>
 
@@ -91,7 +94,6 @@ function Privacy() {
                 .
               </p>
             </section>
-
           </div>
 
           <div className="border-b border-gray-200 w-full mt-12"></div>
