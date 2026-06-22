@@ -38,12 +38,13 @@ function Footer() {
               <span className="font-semibold text-xs uppercase tracking-widest text-red-500">
                 Páginas
               </span>
-              <a
-                href="#home"
+              <Link
+                to="/"
                 className="hover:text-red-500 hover:underline transition-colors duration-200"
               >
                 Inicio
-              </a>
+              </Link>
+
               <Link
                 to="/about"
                 className="hover:text-red-500 hover:underline transition-colors duration-200"
