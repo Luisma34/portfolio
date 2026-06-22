@@ -70,7 +70,7 @@ function Privacy() {
 
             <section>
               <h2 className="font-semibold text-black mb-2">Alojamiento</h2>
-              <p className="text-gray-400 italic">
+              <p>
                 Este sitio está alojado en Vercel Inc. (EE. UU.), que puede
                 procesar automáticamente la IP y los registros de acceso para
                 garantizar el funcionamiento y la seguridad del servicio. Los
