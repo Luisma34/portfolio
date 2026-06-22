@@ -80,7 +80,7 @@ function Privacy() {
                   href="https://vercel.com/legal/privacy-notice"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:underline text-red-500"
+                  className="underline hover:text-red-500"
                 >
                   {" "}
                   política de privacidad de Vercel.
