@@ -75,8 +75,7 @@ function Privacy() {
                 procesar automáticamente la IP y los registros de acceso para
                 garantizar el funcionamiento y la seguridad del servicio. Los
                 datos pueden tratarse fuera del EEE, amparados por Cláusulas
-                Contractuales Tipo conforme al RGPD. Más información en la
-                política de{" "}
+                Contractuales Tipo conforme al RGPD. Más información en la{" "}
                 <a
                   href="https://vercel.com/legal/privacy-notice"
                   target="_blank"
@@ -84,7 +83,7 @@ function Privacy() {
                   className="hover:underline hover:text-red-500"
                 >
                   {" "}
-                  privacidad de Vercel.
+                  política de privacidad de Vercel.
                 </a>
               </p>
             </section>
