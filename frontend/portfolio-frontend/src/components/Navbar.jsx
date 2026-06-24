@@ -80,24 +80,24 @@ function Navbar() {
               >
                 <HiX />
               </button>
-              <Link to="/about" className={`text-2xl ${linkClass("/about")}`}>
+              <Link to="/about" className={` md:text-2xl ${linkClass("/about")}`}>
                 Sobre mí
               </Link>
               <Link
                 to="/projectsPage"
-                className={`text-2xl ${linkClass("/projectsPage")}`}
+                className={`md:text-2xl ${linkClass("/projectsPage")}`}
               >
                 Proyectos
               </Link>
               <Link
                 to="/contact"
-                className={`text-2xl ${linkClass("/contact")}`}
+                className={`md:text-2xl ${linkClass("/contact")}`}
               >
                 Contacto
               </Link>
 
               {/* Footer del panel */}
-              <div className="mt-auto border-t border-gray-200 w-full pt-4 pb-2 flex flex-col gap-1">
+              <div className="mt-auto border-t border-gray-200 w-full pt-4 md:pb-2 flex md:flex-col gap-1">
                 <p className="text-xs text-gray-400">
                   © {year} Luis Manuel Cordón Álvarez
                 </p>
