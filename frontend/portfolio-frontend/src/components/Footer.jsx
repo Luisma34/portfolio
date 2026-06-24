@@ -23,6 +23,7 @@ function Footer() {
             </p>
           </div>
 
+        {/* EXPANDIR EN PANTALLAS GRANDES */}
           {/* Centro  */}
           <div className="flex flex-col gap-2 max-w-xs">
             <blockquote className="text-sm text-gray-400 italic leading-relaxed">

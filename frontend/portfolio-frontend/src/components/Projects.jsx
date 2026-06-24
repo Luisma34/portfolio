@@ -5,15 +5,17 @@ import dorImg from "../assets/football-shop.png";
 import libraryImg from "../assets/library-manager.png";
 import ticTacToeImg from "../assets/tic-tac-toe.png";
 
-function Projects({ className, namePage, headingClass = "text-2xl md:text-4xl font-serif py-3 md:py-5 pb-5 md:pb-15" }) {
+function Projects({
+  className,
+  namePage,
+  headingClass = "text-2xl md:text-4xl font-serif py-3 md:py-5 pb-5 md:pb-15",
+}) {
   return (
     <>
-      {/* V.1 Próximamente vamos a implementar URL para cada proyecto */}
+      {/*Los proyectos tienen que subir más elegantes*/}
       <div id="projects" className={`${className}`}>
         <Layout>
-          <h2 className={headingClass}>
-            {namePage}
-          </h2>
+          <h2 className={headingClass}>{namePage}</h2>
           {/* IMPLEMENTAR LOCATION PARA CAMBIAR LAYOUT EN LA URL */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-2.5 md:gap-10 w-full">
             {/* Inplay */}
@@ -54,7 +56,9 @@ function Projects({ className, namePage, headingClass = "text-2xl md:text-4xl fo
               <ProjectsCard
                 image={libraryImg}
                 project={"Library manager"}
-                description={"Libreria para administrar tu biblioteca personal."}
+                description={
+                  "Libreria para administrar tu biblioteca personal."
+                }
                 stack={"HTML, CSS, JavaScript Vanilla."}
               ></ProjectsCard>
             </a>

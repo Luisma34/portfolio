@@ -9,6 +9,7 @@ function ProjectsPage() {
 
   return (
     <>
+    {/*Los proyectos tienen que subir más elegantes*/}
       <div className="pt-25 md:pt-36 pb-15">
         <Layout>
           <div className="border-b w-9/12 md:w-full"></div>
