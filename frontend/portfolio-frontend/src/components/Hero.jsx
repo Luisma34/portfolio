@@ -18,7 +18,7 @@ function Hero() {
           {/* relative: reservado para elementos futuros sobre la foto */}
           <div className="relative">
             <img
-              className="mx-auto h-fit w-1/2 md:h-4/5 md:w-3/4 pt-1"
+              className="mx-auto rounded-2xl h-fit w-1/2 md:h-4/5 md:w-3/4 pt-1"
               src={profilePhoto}
               alt="Foto de perfil"
             />
