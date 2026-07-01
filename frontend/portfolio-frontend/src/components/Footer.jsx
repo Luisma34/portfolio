@@ -5,7 +5,7 @@ function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-black mt-10">
+    <footer className="border-t border-black mt-20 md:mt-32">
       {/* Bloque principal */}
       <Layout>
         <div className="w-full py-10 flex flex-col md:flex-row items-start gap-16 md:gap-32">

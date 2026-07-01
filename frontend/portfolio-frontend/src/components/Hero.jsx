@@ -15,17 +15,26 @@ function Hero() {
     <Layout>
       <section className="flex flex-col pt-18 md:pt-32" id="home">
         <div className="flex flex-col md:flex-row px-2 md:px-15 gap-5 items-center text-black-700">
-          {/* relative: reservado para elementos futuros sobre la foto */}
-          <div className="relative">
+          {/* Foto */}
+          <motion.div
+            className="relative"
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+          >
             <img
               className="mx-auto rounded-2xl h-fit w-1/2 md:h-4/5 md:w-3/4 pt-1"
               src={profilePhoto}
               alt="Foto de perfil"
             />
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col w-3/4 md:w-4xl gap-4 md:p-4 items-center md:items-end xl:items-start justify-center md:justify-end md:self-end">
-            {/* Un solo h1 por página — SEO */}
+          <motion.div
+            className="flex flex-col w-3/4 md:w-4xl gap-4 md:p-4 items-center md:items-end xl:items-start justify-center md:justify-end md:self-end"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
+          >
             <h1 className="text-2xl md:text-4xl font-serif">
               Soy Luis Manuel, Full Stack developer (Junior).
             </h1>
@@ -104,7 +113,7 @@ function Hero() {
                 </motion.span>
               </motion.a>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="rounded-sm border border-black bg-black px-4 py-3 font-mono text-xs text-white mt-8 md:mt-15 w-full self-center">
           <p className="text-center tracking-wider leading-relaxed">

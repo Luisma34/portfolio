@@ -72,7 +72,7 @@ function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ duration: 0.4, ease: "easeInOut" }}
-              className="fixed top-0 right-0 h-full w-1/3 flex flex-col items-start gap-5 px-6 py-4 z-50 shadow-xl bg-white md:hidden"
+              className="fixed top-0 right-0 h-full w-3/4 max-w-xs flex flex-col items-start gap-5 px-6 py-4 z-50 shadow-xl bg-white md:hidden"
             >
               <button
                 className="self-end cursor-pointer text-2xl"
@@ -80,24 +80,18 @@ function Navbar() {
               >
                 <HiX />
               </button>
-              <Link to="/about" className={` md:text-2xl ${linkClass("/about")}`}>
+              <Link to="/about" className={`text-2xl ${linkClass("/about")}`}>
                 Sobre mí
               </Link>
-              <Link
-                to="/projectsPage"
-                className={`md:text-2xl ${linkClass("/projectsPage")}`}
-              >
+              <Link to="/projectsPage" className={`text-2xl ${linkClass("/projectsPage")}`}>
                 Proyectos
               </Link>
-              <Link
-                to="/contact"
-                className={`md:text-2xl ${linkClass("/contact")}`}
-              >
+              <Link to="/contact" className={`text-2xl ${linkClass("/contact")}`}>
                 Contacto
               </Link>
 
               {/* Footer del panel */}
-              <div className="mt-auto border-t border-gray-200 w-full pt-4 md:pb-2 flex md:flex-col gap-1">
+              <div className="mt-auto border-t border-gray-200 w-full pt-4 pb-2 flex flex-col gap-1">
                 <p className="text-xs text-gray-400">
                   © {year} Luis Manuel Cordón Álvarez
                 </p>
