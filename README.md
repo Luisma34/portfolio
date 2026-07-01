@@ -12,17 +12,6 @@
 - Framer motion
 - React Router DOM
 
-## Estructura del proyecto
-
-portfolio/
-  frontend/
-    portfolio-frontend/
-      src/
-        components/
-        pages/
-        assets/
-  backend/
-    luisdeveloper-api/
 
 ## Instalación y uso 
 ### Clonar el repositorio
