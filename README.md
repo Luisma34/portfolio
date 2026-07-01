@@ -14,6 +14,29 @@
 
 ## Estructura del proyecto
 
+portfolio/
+├── frontend/          # React + Vite
+│   └── portfolio-frontend/
+│       └── src/
+│           ├── components/
+│           ├── pages/
+│           └── assets/
+└── backend/           # Spring Boot
+    └── luisdeveloper-api/
+
+## Instalación y uso 
+# Clonar el repositorio
+git clone https://github.com/Luisma34/portfolio.git
+
+# Instalar dependencias del frontend
+cd frontend/portfolio-frontend
+npm install
+
+# Iniciar en desarrollo
+npm run dev
+
+
+
 
 
 
