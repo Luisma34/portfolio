@@ -5,12 +5,12 @@ import Navbar from "../components/Navbar";
 import ProjectsPage from "../pages/ProjectsPage";
 import Privacy from "../pages/Privacy";
 import About from "../pages/About";
+import NotFound from "../pages/NotFound";
 import Footer from "../components/Footer";
 
 function AppRouter() {
   return (
     <BrowserRouter>
-      {/* Navbar fuera de Routes para que aparezca en todas las páginas */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -18,6 +18,7 @@ function AppRouter() {
         <Route path="/projectsPage" element={<ProjectsPage />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>
