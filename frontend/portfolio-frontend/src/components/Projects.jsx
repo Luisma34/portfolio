@@ -11,14 +11,14 @@ function Projects({
 }) {
   return (
     <>
-      {/*Los proyectos tienen que subir más elegantes*/}
       <div id="projects" className={`${className}`}>
         <Layout>
+          {/* Cambiar a un grid cuando dispongamos de más proyectos */}
           <h2 className={headingClass}>{namePage}</h2>
-          {/* IMPLEMENTAR LOCATION PARA CAMBIAR LAYOUT EN LA URL */}
-          <div className="grid grid-cols-1 gap-2.5 md:gap-10 w-full max-w-xl mx-auto">
+          <div className="flex justify-center w-full">
             {/* Inplay */}
             <motion.div
+              className="w-full max-w-xl"
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0 }}
@@ -42,3 +42,5 @@ function Projects({
 }
 
 export default Projects;
+
+
