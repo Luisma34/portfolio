@@ -16,7 +16,7 @@ function Projects({
         <Layout>
           <h2 className={headingClass}>{namePage}</h2>
           {/* IMPLEMENTAR LOCATION PARA CAMBIAR LAYOUT EN LA URL */}
-          <div className="grid grid-cols-1 gap-2.5 md:gap-10 w-full">
+          <div className="grid grid-cols-1 gap-2.5 md:gap-10 w-full max-w-xl mx-auto">
             {/* Inplay */}
             <motion.div
               initial={{ y: 50, opacity: 0 }}
